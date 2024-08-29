@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001; //set port
 
 //middleware
 app.use(express.json());
-app.use(express.urlencoded({ extend: true}));
+app.use(express.urlencoded({ extended: true}));
 app.use(express.static("public"));
 
 //routes
